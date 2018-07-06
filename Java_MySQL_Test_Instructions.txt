@@ -1,5 +1,4 @@
-# log-parser-challenge
-The goal is to write a parser in Java that parses web server access log file, loads the log to MySQL and checks if a given IP makes more than a certain number of requests for the given duration. 
+﻿The goal is to write a parser in Java that parses web server access log file, loads the log to MySQL and checks if a given IP makes more than a certain number of requests for the given duration. 
 
 Java
 ----
@@ -66,3 +65,5 @@ Deliverables
 (3) MySQL schema used for the log data
 
 (4) SQL queries for SQL test
+
+
