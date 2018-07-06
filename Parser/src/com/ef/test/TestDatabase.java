@@ -15,7 +15,7 @@ import com.ef.LogParser;
 
 public class TestDatabase extends TestBase {
 
-	String file = "/Users/bruno/Development/projects/wallethub-test-project/access.log";
+	String filePath = "C:\\Users\\Bruno.Barbosa\\Documents\\GitHub\\log-parser-challenge\\Parser\\access.log";
 	DatabaseConnection database;
 
 	@Before
@@ -39,7 +39,7 @@ public class TestDatabase extends TestBase {
 
 	@Test
 	public void testSaveLogFile() throws Exception {
-		List<String> lines = FileTool.readLines(file);
+		List<String> lines = FileTool.readLines(filePath);
 		List<Log> logs = LogParser.parse(lines);
 		database.saveLogFile(logs);
 	}

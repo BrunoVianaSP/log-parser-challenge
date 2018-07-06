@@ -18,14 +18,14 @@ import com.ef.LogParser;
 public class TestLogFileParse extends TestBase {
 
 	private static final int LOG_FILE_SIZE = 116484;
-	String file = "/Users/bruno/Development/projects/wallethub-test-project/access.log";
+	String filePath = "C:\\Users\\Bruno.Barbosa\\Documents\\GitHub\\log-parser-challenge\\Parser\\access.log";
 	List<String> lines;
 	LogAnalyst analyst;
 
 	@Before
 	public void before() throws Exception {
 		super.before();
-		lines = FileTool.readLines(file);
+		lines = FileTool.readLines(filePath);
 		List<Log> logs = LogParser.parse(lines);
 		String startDate = "2017-01-01.13:00:00";
 		int threshold = 100;
